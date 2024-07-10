@@ -1,5 +1,4 @@
-.
-├── README.md
+RISC-V CPU
 ├── assembly_test-risc_v
 │   ├── scenario1.asm
 │   ├── scenario1_hex.coe
@@ -621,6 +620,4 @@
 │   ├── Report.pdf
 │   └── resources
 │       └── risc-v-cpu.png
-└── tree.txt
-
-90 directories, 534 files
+└── README.md
