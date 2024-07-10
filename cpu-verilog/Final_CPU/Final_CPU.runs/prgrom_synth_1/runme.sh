@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1'
+HD_PWD='D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.runs/prgrom_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

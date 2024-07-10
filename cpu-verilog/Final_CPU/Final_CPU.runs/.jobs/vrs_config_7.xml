@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="prgrom_synth_1" LaunchDir="D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.runs/prgrom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

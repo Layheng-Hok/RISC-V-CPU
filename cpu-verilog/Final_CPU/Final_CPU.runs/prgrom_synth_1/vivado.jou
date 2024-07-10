@@ -2,11 +2,11 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jun  7 13:27:18 2024
-# Process ID: 8216
-# Current directory: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1
+# Start of session at: Wed Jul 10 20:41:02 2024
+# Process ID: 21076
+# Current directory: D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.runs/prgrom_synth_1
 # Command line: vivado.exe -log prgrom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source prgrom.tcl
-# Log file: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1/prgrom.vds
-# Journal file: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1\vivado.jou
+# Log file: D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.runs/prgrom_synth_1/prgrom.vds
+# Journal file: D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.runs/prgrom_synth_1\vivado.jou
 #-----------------------------------------------------------
 source prgrom.tcl -notrace

@@ -9,7 +9,7 @@
   "../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../../gufuf.srcs/sources_1/ip/RAM/sim/RAM.v" \
+  "../../../../Final_CPU.srcs/sources_1/ip/RAM/sim/RAM.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

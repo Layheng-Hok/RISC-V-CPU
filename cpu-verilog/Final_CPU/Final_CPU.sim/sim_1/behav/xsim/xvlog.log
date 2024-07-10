@@ -1,34 +1,36 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RAM
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/ip/prgrom/sim/prgrom.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/sim/prgrom.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module prgrom
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/ip/cpu_clk/cpu_clk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/ip/cpu_clk/cpu_clk_clk_wiz.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_clk_clk_wiz
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/ip/cpu_clk/cpu_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/ip/cpu_clk/cpu_clk.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module cpu_clk
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CPU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Clock.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Clock.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Clock
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Controller.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Controller
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DataMem
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Decoder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Decoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/IFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/IFetch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IFetch
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Led.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Led.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Led
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/MemOrIO.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/MemOrIO.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MemOrIO
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Switch.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Switch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Switch
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/Tube.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/Tube.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Tube
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clock_divider
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/letzfuckinggo/letzfuckinggo.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUSTech/Year 2 Semester 2/CS202 - Computer Organization/Project/GitHub/RISC-V-CPU/cpu-verilog/Final_CPU/Final_CPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

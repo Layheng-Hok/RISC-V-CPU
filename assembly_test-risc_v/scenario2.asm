@@ -326,6 +326,7 @@ test110:
      	bne s0, s11, test110
      
 	add a0, zero, s2
+	add t4, zero, zero	  # reset counter
      	addi s1, zero, 1	  # s1 = 1 (const)
      	jal fib1
      	
@@ -382,8 +383,6 @@ fib2:
      	sw ra, 4(sp)	  	  # save the return address
      	sw a0, 0(sp)		  # save the argument n
      	addi t4, t4, 2		  # count item pushes
-     
-     	sw a0, 0xfffffc69(zero)      # output result (push item)
 
      	blt a0, s1, set_to_1_2	  # test for n<1
      	add t0, zero, zero	  # else set t0 to 0
@@ -404,9 +403,11 @@ fib_helper2:
      	addi a0, a0, -1		  # n >= 1; argument gets fib(n-1)
      	jal fib2              	  # call fib with(n-1)	
 	
-     	add t1, t2, zero	  # t1 = f(n-2)
-     	add t2, a0, zero	  # t2 = f(n-1)
-     	add a0, t2, t1		  # compute f(n) = f(n-1) + f(n-2)
+     	add t1, t2, zero	  # t1 = fib(n-2)
+     	add t2, a0, zero	  # t2 = fib(n-1)
+     	add a0, t2, t1		  # compute f(n) = fib(n-1) + fib(n-2)
+
+	sw t1, 0xfffffc69(zero)   # output fib(n-2)
 	
      	lw ra, 4(sp)		  # return from jal: restore the return address
      	addi sp, sp, 8		  # adjust stack pointer to pop 2 items
