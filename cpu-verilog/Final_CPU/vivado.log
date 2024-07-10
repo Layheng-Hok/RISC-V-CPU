@@ -1,0 +1,206 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  7 13:07:31 2024
+# Process ID: 27160
+# Current directory: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17400 C:\Users\Hok Layheng\Desktop\Final_CPU\Final_CPU\Final_CPU.xpr
+# Log file: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/vivado.log
+# Journal file: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/Final_CPU' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/gufufuf/gufuf/gufuf/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/gufufuf/gufuf/gufuf/top_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/gufufuf/gufufuf/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/gufufuf/gufufuf/top_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/latest/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/latest/top_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/fixsevenseg/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/fixsevenseg/top_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/problem_child/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/problem_child/top_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Hok Layheng/Desktop/Final_CPU/letzgo/top_tb_behav.wcfg', nor could it be found using path 'C:/Users/Administrator/Desktop/letzgo/top_tb_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Hok Layheng/Desktop/Final_CPU/gufufuf/gufuf/cpu_risc_v_v1/Others/SEU_CSE_507_user_uart_bmpg_1.3', nor could it be found using path 'C:/Users/Administrator/Desktop/gufufuf/gufuf/cpu_risc_v_v1/Others/SEU_CSE_507_user_uart_bmpg_1.3'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Hok Layheng/Desktop/Final_CPU/gufufuf/gufuf/cpu_risc_v_v1/Others/SEU_CSE_507_user_uart_bmpg_1.3'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {c:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/scenario1.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/scenario1.coe' provided. It will be converted relative to IP Instance files 'scenario1.coe'
+generate_target all [get_files  {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}]
+launch_runs -jobs 10 prgrom_synth_1
+[Fri Jun  7 13:08:30 2024] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}] -directory {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files} -ipstatic_source_dir {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/questa} {riviera=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri Jun  7 13:09:15 2024] Launched prgrom_synth_1, synth_1...
+Run output will be captured here:
+prgrom_synth_1: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1/runme.log
+synth_1: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/synth_1/runme.log
+[Fri Jun  7 13:09:15 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1543 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'Clock/clk/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/.Xil/Vivado-24844-LAPTOP-RPUCV7SL/dcp3/cpu_clk.edf:244]
+Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU_board.xdc]
+Finished Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU_board.xdc]
+Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/cpu_clk/cpu_clk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/cpu_clk/cpu_clk.xdc:57]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1860.480 ; gain = 566.566
+Finished Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU_early.xdc]
+Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU.xdc]
+Finished Parsing XDC File [C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/.Xil/Vivado-27160-LAPTOP-RPUCV7SL/dcp2/CPU.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1880.059 ; gain = 19.578
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1880.059 ; gain = 19.578
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2003.277 ; gain = 854.402
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2042.832 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {c:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/latest.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/latest.coe' provided. It will be converted relative to IP Instance files 'latest.coe'
+generate_target all [get_files  {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+catch { config_ip_cache -export [get_ips -all prgrom] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}] -no_script -sync -force -quiet
+reset_run prgrom_synth_1
+launch_runs -jobs 10 prgrom_synth_1
+[Fri Jun  7 13:27:16 2024] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.srcs/sources_1/ip/prgrom/prgrom.xci}}] -directory {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files} -ipstatic_source_dir {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/modelsim} {questa=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/questa} {riviera=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/riviera} {activehdl=C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri Jun  7 13:27:27 2024] Launched prgrom_synth_1, synth_1...
+Run output will be captured here:
+prgrom_synth_1: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/prgrom_synth_1/runme.log
+synth_1: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/synth_1/runme.log
+[Fri Jun  7 13:27:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri Jun  7 13:33:44 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri Jun  7 14:03:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/synth_1/runme.log
+[Fri Jun  7 14:03:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Hok Layheng/Desktop/Final_CPU/Final_CPU/Final_CPU.runs/impl_1/CPU.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+disconnect_hw_server
