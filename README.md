@@ -160,8 +160,7 @@ To check if the CPU can execute RISC-V instructions correctly, detailed testing 
 | Test Case Number | Test Case Description | Passed |
 |------------------|-----------------------|:------:|
 | 3'b000          | Input test number a, input test number b, and display the 8-bit binary format of a and b on the output device (LED) | :heavy_check_mark: |
-| 3'b001          |  Input test number a, place it in a register by instruction lb, display the value of the 32-bit register in hexadecimal format on the output device (7
-segment tubes or VGA), and save the number to memory (in the 3'b011-3'b111 test case, the value of a will be read from the memory unit using the lw instruction for comparison) | :heavy_check_mark: |
+| 3'b001          |  Input test number a, place it in a register by instruction lb, display the value of the 32-bit register in hexadecimal format on the output device (7 segment tubes or VGA), and save the number to memory (in the 3'b011-3'b111 test case, the value of a will be read from the memory unit using the lw instruction for comparison) | :heavy_check_mark: |
 | 3'b010          | Input test number b, place it in a register by instruction lbu, display the value of the 32-bit register in hexadecimal format on the output device (7 segment tubes or VGA), and save the number to memory (in the 3'b011-3'b111 test case, the value of b will be read from the memory unit using the lw instruction for comparison) | :heavy_check_mark: |
 | 3'b011          | Compare test number a and test number b (from testcase 3’b001 and testcase 3’b010) using instruction beq. If the relationship is true, light up the LED, but if the relationship is not true, turn off the LED | :heavy_check_mark: |
 | 3'b100          | In the 3'b011-3'b111 test case, the value of b will be read from the memory unit using the lw instruction for comparison | :heavy_check_mark: |
