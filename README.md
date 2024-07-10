@@ -60,3 +60,10 @@ RISC-V CPU
 └── README.md
 ```
 *Note*: This is a simplified project directory tree. The detailed directory tree can be found [here](./project_info/directory-tree.txt).
+
+## Contribution
+| Contributor | CPU Design & Implementation | Assembly Code (RISC-V) | Report |
+| --- | --- | --- | --- |
+| [Jaouhara ZERHOUNI KHAL](https://github.com/Jouwy) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Layheng HOK](https://github.com/Layheng-Hok) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Harrold TOK Kwan Hang](https://github.com/Barracudapi) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|
