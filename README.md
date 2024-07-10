@@ -59,3 +59,4 @@ RISC-V CPU
 ├── project_info
 └── README.md
 ```
+*Note*: This is a simplified project directory tree. The detailed directory tree can be found [here](./project_info/directory-tree.txt).
