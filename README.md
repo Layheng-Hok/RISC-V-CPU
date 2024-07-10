@@ -12,6 +12,10 @@ SUSTech 2024 Spring's Project of Course `CS202 - Computer Organization` Led By P
 
 </div>
 
+[*[Read the detailed project requirements]*](./project_info/CS202-ComputerOrgnization-Spring2024-ProjectRequirments.pdf)
+
+[*[Read the detailed project report]*](./project_info/REPORT.pdf)
+
 ## Project Directory
 ```
 RISC-V CPU
@@ -123,6 +127,48 @@ RISC-V CPU
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | LUI         | 7'b0110111            | `lui rd, imm`               |
+
+## FPGA I/O
+### I/O Support
+- Board: Xilinx Artix-7 FPGA development board, EGO1 (XC7A35T-1CSG324C)
+- Use lw/lb/lbu with negative address to get input
+- Use sw with negative address to display output
+- Address to I/O mapping:
+  - 0xfffffc00 16 switches
+  - 0xfffffc10 left 8 switches
+  - 0xfffffc20 button V1
+  - 0xfffffc22 button R11
+  - 0xfffffc24 button R17
+  - 0xfffffc26 button U4
+  - 0xfffffc40 16 LED
+  - 0xfffffc60 right 8 LED
+  - 0xfffffc69 tube 32-bit
+  - 0xfffffc70 tube 16-bit
+
+### Control
+<div align="center">
+    <img src="./project_info/resources/fpga-board.png" alt="risc-v cpu">
+</div>
+
+*Note*: The top button where it says `Confirm Input B` in the control diagram should be changed to `Confirm Input A`.
+
+## CPU Testing
+To check if the CPU can execute RISC-V instructions correctly, detailed testing schemes are provided [here](./project_info/CPU-Project-Testing.pdf).
+
+### Scenario 1: Basic
+
+| Test Case Number | Test Case Description | Passed |
+|------------------|-----------------------|:------:|
+| 3'b000          | Input test number a, input test number b, and display the 8-bit binary format of a and b on the output device (LED) | :heavy_check_mark: |
+| 3'b001          |  Input test number a, place it in a register by instruction lb, display the value of the 32-bit register in hexadecimal format on the output device (7
+segment tubes or VGA), and save the number to memory (in the 3'b011-3'b111 test case, the value of a will be read from the memory unit using the lw instruction for comparison) | :heavy_check_mark: |
+| 3'b010          | Input test number b, place it in a register by instruction lbu, display the value of the 32-bit register in hexadecimal format on the output device (7 segment tubes or VGA), and save the number to memory (in the 3'b011-3'b111 test case, the value of b will be read from the memory unit using the lw instruction for comparison) | :heavy_check_mark: |
+| 3'b011          | Compare test number a and test number b (from testcase 3’b001 and testcase 3’b010) using instruction beq. If the relationship is true, light up the LED, but if the relationship is not true, turn off the LED | :heavy_check_mark: |
+| 3'b100          | In the 3'b011-3'b111 test case, the value of b will be read from the memory unit using the lw instruction for comparison | :heavy_check_mark: |
+| 3'b101          | Compare test number a and test number b using instruction beq. If the relationship is true, light up the LED, but if the relationship is not true, turn off the LED | :heavy_check_mark: |
+| 3'b110          | Compare test number a and test number b using instruction blt. If the relationship is true, light up the LED, but if the relationship is not true, turn off the LED | :heavy_check_mark: |
+| 3'b111          | Compare test number a and test number b using instruction bge. If the relationship is true, light up the LED, but if the relationship is not true, turn off the LED | :heavy_check_mark: |
+
 
 ## Contribution
 | Contributor | CPU Design & Implementation | Assembly Code (RISC-V) | Report |
