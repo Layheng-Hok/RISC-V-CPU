@@ -83,7 +83,7 @@ RISC-V CPU
 </div>
 
 ### Supported RISC-V Instructions
-#### R-type Instructions
+#### R-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `ADD`         | 7'b0110011 + funct3:000 + funct7:0000000 | `add rd, rs1, rs2`          |
@@ -93,7 +93,7 @@ RISC-V CPU
 | `SLL`         | 7'b0110011 + funct3:001 + funct7:0000000 | `sll rd, rs1, rs2`          |
 | `SRA`         | 7'b0110011 + funct3:101 + funct7:0100000 | `sra rd, rs1, rs2`          |
 
-#### I-type Instructions
+#### I-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `ADDI`        | 7'b0010011 + funct3:000 | `addi rd, rs1, imm`         |
@@ -105,7 +105,7 @@ RISC-V CPU
 | `LB`          | 7'b0000011 + funct3:000 | `lb rd, offset(rs1)`        |
 | `LBU`         | 7'b0000011 + funct3:100 | `lbu rd, offset(rs1)`       |
 
-#### S-type Instructions
+#### S-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `SW`          | 7'b0100011 + funct3:010 | `sw rs2, offset(rs1)`       |
@@ -120,12 +120,12 @@ RISC-V CPU
 | `BLTU`        | 7'b1100011 + funct3:110 | `bltu rs1, rs2, offset`     |
 | `BGEU`        | 7'b1100011 + funct3:111 | `bgeu rs1, rs2, offset`     |
 
-#### J-type Instructions
+#### J-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `JAL`         | 7'b1101111            | `jal rd, offset`            |
 
-#### U-type Instructions
+#### U-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `LUI`         | 7'b0110111            | `lui rd, imm`               |
