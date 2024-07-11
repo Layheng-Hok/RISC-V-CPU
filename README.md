@@ -110,7 +110,7 @@ RISC-V CPU
 |-------------|-----------------------|-----------------------------|
 | `SW`          | 7'b0100011 + funct3:010 | `sw rs2, offset(rs1)`       |
 
-#### B-type Instructions
+#### B-type
 | Instruction | Encoding              | Usage Method                |
 |-------------|-----------------------|-----------------------------|
 | `BEQ`        | 7'b1100011 + funct3:000 | `beq rs1, rs2, offset`      |
