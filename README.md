@@ -147,7 +147,7 @@ RISC-V CPU
   - `0xfffffc69` tube 32-bit
   - `0xfffffc70` tube 16-bit
 
-### Control
+### Control Diagram
 <div align="center">
     <img src="./project_info/resources/fpga-board.png" alt="risc-v cpu">
 </div>
@@ -182,6 +182,22 @@ To check if the CPU can execute RISC-V instructions correctly, detailed testing 
 | `3'b101`         | Input `12-bit` or `16-bit` data in little endian mode from the dial switch and present it on the output device in big endian mode | :heavy_check_mark: |
 |`3'b110`          |  Calculate the `n-th` number of `Fibonacci` sequence in a recursive manner, record the number of times the stack is pushed and popped, and display the sum of the pushed and popped times on the output device | :heavy_check_mark: |
 | `3'b111`         | Calculate the `n-th` number of `Fibonacci` sequence in a recursive manner, record the pushed and popped data, display the pushed data on the output device, each pushed data display for 2-3 seconds (note that here we do not focus on the pushed and popped of the value of `ra` register, hence should output the Fibonacci sequence itself)| :heavy_check_mark: |
+
+## Getting Started
+### Setup
+- Clone this GitHub repository or download the source code in ZIP then unzip `Final_CPU` folder at `./cpu-verilog/Final_CPU`
+- Have `Vivado` ready, locate and open `.xpr` file at `./cpu-verilog/Final_CPU/Final_CPU.xpr`
+- Generate bitstream
+- Get the correct FPGA ready, open target, and program the board
+
+### Control Manual
+- After programming the board with the `.coe` file of either scenario 1 or 2, all the 16 LED should be lit up to indicate the initial state of the program
+- Press button `S0` to turn off the LED
+- Dial the top 8 switches to select a test case
+- Confirm the the test case with button `S3`
+- Give the test case an input with either 8 or 16 switches (depend on the test case), confirm the first input with button `S4`, and confirm the second input with button `S1` if there is one
+- Then the CPU shall execute the instructions and output the results either to the LED or 7-segment tube
+- Press button `S0` to exit the the test case before choosing another one
 
 ## Contribution
 | Contributor | CPU Design & Implementation | Assembly Code (RISC-V) | Report |
